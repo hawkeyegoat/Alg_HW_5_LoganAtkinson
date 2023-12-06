@@ -23,7 +23,7 @@ class InputLib {
             InputStreamReader in = new InputStreamReader(instream);
             inbuf = new BufferedReader(in);
         }
-        catch (java.io.IOException e) {
+        catch (IOException e) {
             throw new InputError(e.getMessage());
         }
 
@@ -35,7 +35,7 @@ class InputLib {
         try {
             inbuf.close();
         }
-        catch (java.io.IOException e) {
+        catch (IOException e) {
             throw new InputError(e.getMessage());
         }
     }
@@ -52,7 +52,7 @@ class InputLib {
         try {
             line = inbuf.readLine();
         }
-        catch (java.io.IOException e) {
+        catch (IOException e) {
             throw new InputError(e.getMessage());
         }
 

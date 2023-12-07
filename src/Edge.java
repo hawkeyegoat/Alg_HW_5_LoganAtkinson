@@ -4,6 +4,7 @@
  * Modified by Donald Chinn December 11, 2003.
  * Modified by Donald Chinn February 28, 2004. */
 
+
 /**
  * Class that represents an edge in a graph.
  * An object (usually some sort of data) can be associated with the edge.
@@ -15,7 +16,7 @@
  * @author edhong
  * @version 0.0
  */
-public class Edge {
+public class Edge  {
     /** the first endpoint of the edge */
     private Vertex v1;
     
@@ -79,5 +80,5 @@ public class Edge {
     public Object getName() {
         return this.name;
     }
-    
+
 }
